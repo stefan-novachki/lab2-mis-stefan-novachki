@@ -34,7 +34,9 @@ Web апликација за прикажување на рецепти раз�
 ### Детален приказ на рецепт
 ![Screenshot 3](screenshots/Screenshot_511.png)
 
-### Омилени рецепти
-![Screenshot 3](screenshots/Screenshot_511.png)
+## ЛАБ 3 СЛИКИ 
 
-![Screenshot 3](screenshots/Screenshot_511.png)
+### Омилени рецепти
+![Screenshot 3](screenshots/Screenshot_512.png)
+
+![Screenshot 3](screenshots/Screenshot_513.png)
