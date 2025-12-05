@@ -1,7 +1,23 @@
 import 'package:flutter/material.dart';
-import 'screens/categories_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'screens/home_screen.dart';
+import 'services/web_notification_service.dart';
+import 'firebase_options.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  
+  // Initialize Firebase
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  
+  // Initialize web notifications
+  await WebNotificationService.initialize();
+  
+  // Schedule notification to appear 20 seconds after app launch
+  WebNotificationService.scheduleRandomRecipeNotification();
+  
   runApp(const MyApp());
 }
 
@@ -17,7 +33,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.orange,
         useMaterial3: true,
       ),
-      home: const CategoriesScreen(),
+      home: const HomeScreen(),
     );
   }
 }

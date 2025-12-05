@@ -1,6 +1,6 @@
-# Recipe App - Апликација за Рецепти
+# Recipe App - Апликација за Рецепти (Web Version)
 
-Мобилна апликација за прикажување на рецепти развиена во Flutter со користење на TheMealDB API.
+Web апликација за прикажување на рецепти развиена во Flutter со користење на TheMealDB API.
 
 ## Опис
 
@@ -10,6 +10,18 @@
 - Детален приказ на рецепти со состојки и инструкции
 - Рандом рецепт на денот
 - YouTube видео линкови за подготовка
+- **НОВО (Lab 3):** Додавање рецепти во омилени
+- **НОВО (Lab 3):** Дневни нотификации за рецепт на денот
+- **НОВО (Lab 3):** Firebase интеграција
+
+## Инсталација (Web)
+
+1. Клонирајте го проектот
+2. Извршете `flutter pub get`
+3. Конфигурирајте Firebase за web: `flutterfire configure --platforms=web`
+4. Извршете `flutter run -d chrome`
+
+**Детални инструкции:** Видете `WEB_SETUP.md` или `WEB_README.md`
 
 ## Screenshots
 
@@ -20,4 +32,9 @@
 ![Screenshot 2](screenshots/Screenshot_510.png)
 
 ### Детален приказ на рецепт
+![Screenshot 3](screenshots/Screenshot_511.png)
+
+### Омилени рецепти
+![Screenshot 3](screenshots/Screenshot_511.png)
+
 ![Screenshot 3](screenshots/Screenshot_511.png)
